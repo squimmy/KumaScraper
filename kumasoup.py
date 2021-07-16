@@ -18,8 +18,9 @@ while pageNum < 674:
         
         contents = kuma.text
         file.write(contents)
-        
+        file.flush()
         count = open("kumaclean.txt", "r", encoding="utf-8")
+        
         countFile = open("kumacount.txt", "a", encoding="utf-8")
         data = count.read()
         charCount = len(data)
